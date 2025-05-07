@@ -8,3 +8,8 @@ jobs:
       - uses: jtdor/build-deb-action@v1
         with:
           buildpackage-opts: --build=binary --no-sign
+      - uses: actions/upload-artifact@v3
+        with:
+          name: Artifacts
+          path: debian/artifacts
+    
