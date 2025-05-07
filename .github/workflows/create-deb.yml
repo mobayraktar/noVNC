@@ -7,4 +7,4 @@ jobs:
       - uses: actions/checkout@v4
       - uses: jtdor/build-deb-action@v1
         with:
-          buildpackage-opts: --no-sign
+          buildpackage-opts: --build=binary --no-sign
